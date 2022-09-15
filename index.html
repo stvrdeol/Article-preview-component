@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- displays site properly based on user's device -->
+
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+<title>Article preview component</title>
+<link rel="stylesheet" href="style.css">
+<script>
+  if (screen && screen.width > 800) {
+    document.write(`<script type="text/javascript" 
+src = "js.js" defer><\/script>`);
+  }
+  else{
+    document.write(`<script type="text/javascript" 
+src = "mobile.js" defer ><\/script>`);
+  }
+</script>
+</head>
+
+<body>
+  <section class="main">
+    <section class="left">
+      <img src="images/drawers.jpg" alt="drawers">
+    </section>
+    <section class="right">
+      <section class="text">
+        <h1>Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</h1>
+        <p>Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+      </section>
+      <section class="bottom">
+        <section class="bottom-left">
+          <img src="images/avatar-michelle.jpg" alt="" class="profile-pic">
+          <section class="info">
+            <h3>Michelle Appleton</h3>
+            <p class="date">28 Jun 2020</p>
+          </section>
+        </section>
+        <section class="bottom-right">
+          <section class="hidden hide">
+            <span>SHARE</span>
+            <img src="images/icon-facebook.svg" alt="">
+            <img src="images/icon-twitter.svg" alt="">
+            <img src="images/icon-pinterest.svg" alt="">
+            <section class="arrow-down"></section>
+          </section>
+          <button class="btn"><img src="images/icon-share.svg" alt="" class="svg"></button>
+        </section>
+      </section>
+    </section>
+  </section>
+</body>
+
+</html>
